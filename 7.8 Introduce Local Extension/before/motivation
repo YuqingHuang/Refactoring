@@ -1,0 +1,27 @@
+[Motivation]
+
+If just need few foreign method, can use "Introduce Foreign Method(162)". But if you need more than 2 extra method , you need to organize all of these method and put them to a suitable place.
+
+To achieve this purpose, we need "Subclassing" or "Wrapping". We call the 2 together as "Local Extension".
+
+"Create a new class that contains these extra methods. Make this extension class a subclass or a wrapper of the original."
+
+Local extension is a independent class, also is subclass of the class which is extended: it has all the features of original class.
+
+A principle: Method and Data should be encapsulated together.
+
+[Practice]
+
+1.create a extending class, as the subclass or wrapping of original class.
+
+2.add transform constructor method to extending class.
+
+3.add new feature to extending class.
+
+4.replace original object by extending object.
+
+5.move foreign method to extending class.
+
+
+
+
